@@ -2,19 +2,35 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-10T06:14:24 UTC" name="Default suite" finished-at="2025-07-10T06:14:37 UTC" duration-ms="12804">
+  <suite started-at="2025-07-10T06:27:17 UTC" name="Default suite" finished-at="2025-07-10T06:28:33 UTC" duration-ms="75582">
     <groups>
     </groups>
-    <test started-at="2025-07-10T06:14:24 UTC" name="Default test" finished-at="2025-07-10T06:14:37 UTC" duration-ms="12804">
+    <test started-at="2025-07-10T06:27:17 UTC" name="Default test" finished-at="2025-07-10T06:28:33 UTC" duration-ms="75582">
       <class name="com.cgi.test.LoginUITest">
-        <test-method signature="headerTest()[pri:0, instance:com.cgi.test.LoginUITest@4135c3b]" started-at="2025-07-10T06:14:24 UTC" name="headerTest" finished-at="2025-07-10T06:14:32 UTC" duration-ms="7414" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginUITest@72cc7e6f]" started-at="2025-07-10T06:27:17 UTC" name="setup" finished-at="2025-07-10T06:27:31 UTC" duration-ms="13479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="headerTest()[pri:0, instance:com.cgi.test.LoginUITest@72cc7e6f]" started-at="2025-07-10T06:27:31 UTC" name="headerTest" finished-at="2025-07-10T06:28:05 UTC" duration-ms="34270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- headerTest -->
-        <test-method signature="titleTest()[pri:0, instance:com.cgi.test.LoginUITest@4135c3b]" started-at="2025-07-10T06:14:32 UTC" name="titleTest" finished-at="2025-07-10T06:14:37 UTC" duration-ms="5299" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginUITest@72cc7e6f]" started-at="2025-07-10T06:28:05 UTC" name="teardown" finished-at="2025-07-10T06:28:11 UTC" duration-ms="5893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginUITest@72cc7e6f]" started-at="2025-07-10T06:28:11 UTC" name="setup" finished-at="2025-07-10T06:28:19 UTC" duration-ms="7904" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:com.cgi.test.LoginUITest@72cc7e6f]" started-at="2025-07-10T06:28:19 UTC" name="titleTest" finished-at="2025-07-10T06:28:29 UTC" duration-ms="10187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginUITest@72cc7e6f]" started-at="2025-07-10T06:28:29 UTC" name="teardown" finished-at="2025-07-10T06:28:33 UTC" duration-ms="3701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- com.cgi.test.LoginUITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
