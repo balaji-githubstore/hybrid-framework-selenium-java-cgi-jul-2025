@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\labuser\AppData\Local\Temp\2\testng-eclipse--738489929\testng-customsuite.xml</span>
+                    <span>C:\Users\labuser\AppData\Local\Temp\2\testng-eclipse--2092946740\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.cgi.test.ZDemo1Test" class="method navigator-link" hash-for-method="validTest">validTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.cgi.test.LoginTest" class="method navigator-link" hash-for-method="invalidLoginTest">invalidLoginTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,16 +121,16 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.cgi.test.ZDemo1Test</span>
+              <span class="class-name">com.cgi.test.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validTest">
-                  </a> <!-- validTest -->
-                  <span class="method-name">validTest</span>
+                  <a name="invalidLoginTest">
+                  </a> <!-- invalidLoginTest -->
+                  <span class="method-name">invalidLoginTest</span>
                   <div class="stack-trace">org.testng.TestNGException: 
-Cannot inject @Test annotated Method [validTest] with [class java.lang.String, class java.lang.String].
+Cannot inject @Test annotated Method [invalidLoginTest] with [class java.lang.String, class java.lang.String, class java.lang.String].
 For more information on native dependency injection please refer to https://testng.org/#_dependency_injection
 	at org.testng.internal.Parameters.checkParameterTypes(Parameters.java:442)
 	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:347)
@@ -168,7 +168,7 @@ For more information on native dependency injection please refer to https://test
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\labuser\AppData\Local\Temp\2\testng-eclipse--738489929\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\labuser\AppData\Local\Temp\2\testng-eclipse--2092946740\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -177,11 +177,11 @@ For more information on native dependency injection please refer to https://test
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.cgi.test.ZDemo1Test&quot;&gt;
+      &lt;class name=&quot;com.cgi.test.LoginTest&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;validTest&quot;/&gt;
+          &lt;include name=&quot;invalidLoginTest&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.cgi.test.ZDemo1Test --&gt;
+      &lt;/class&gt; &lt;!-- com.cgi.test.LoginTest --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -223,8 +223,8 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validTest')
-data.setCell(0, 2, 'com.cgi.test.ZDemo1Test')
+data.setCell(0, 1, 'invalidLoginTest')
+data.setCell(0, 2, 'com.cgi.test.LoginTest')
 data.setCell(0, 3, 0);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
@@ -245,9 +245,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.cgi.test.LoginTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">validLoginTest</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">

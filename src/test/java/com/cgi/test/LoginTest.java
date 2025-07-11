@@ -20,16 +20,20 @@ public class LoginTest extends AutomationWrapper {
 		String actualValue = dashboard.getTimeAtWorkText();
 		Assert.assertEquals(actualValue, "Time at Work");
 	}
+	
+	//create a dataprovider wih name - invalidLoginData
+//	saul,saul123,Invalid credential
+//	kim,kim123,Invalid credential
 
 	@Test
-	public void invalidLoginTest() {
+	public void invalidLoginTest(String username,String password,String expectedError) {
 		LoginPage login = new LoginPage(driver);
-		login.enterUsername("john");
-		login.enterPassword("admin123");
+		login.enterUsername(username);
+		login.enterPassword(password);
 		login.clickOnLogin();
 
 		String actualError = login.getInvalidErrorMessage();
-		Assert.assertTrue(actualError.contains("Invalid credential")); // expect true
+		Assert.assertTrue(actualError.contains(expectedError)); // expect true
 	}
 
 }

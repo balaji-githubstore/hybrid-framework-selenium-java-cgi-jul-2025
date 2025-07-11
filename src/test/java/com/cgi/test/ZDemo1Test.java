@@ -1,5 +1,6 @@
 package com.cgi.test;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 /**
@@ -8,15 +9,27 @@ import org.testng.annotations.Test;
 public class ZDemo1Test  {
 	
 	
-	
-	public String[][] validData()
+	@DataProvider
+	public Object[][] validData()
 	{
-		String[][] arr3={{"peter","peter123"},{"john","john123"},{"9","kim123"}};
-		return arr3;
+		Object[][] data=new Object[3][2]; 
+		//i--> number of testcase
+		//j --> number of parameters 
+		data[0][0]="peter";
+		data[0][1]="peter123";
+		
+		data[1][0]="john";
+		data[1][1]="john123";
+		
+		data[2][0]="kinh";
+		data[2][1]="kim123";
+		
+		return data;
+		
 	}
 	
 	
-	@Test
+	@Test(dataProvider = "validData")
 	public void validTest(String username,String password)
 	{
 		System.out.println("valid test"+username+password);
