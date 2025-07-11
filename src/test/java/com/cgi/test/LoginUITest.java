@@ -20,4 +20,10 @@ public class LoginUITest extends AutomationWrapper {
 		String actualHeader = driver.findElement(By.xpath("//h5")).getText();
 		Assert.assertEquals(actualHeader, "Login");
 	}
+	@Test
+	public void header2Test() {
+		// Assert the header - Login
+		String actualHeader = driver.findElement(By.xpath("//h5")).getText();
+		Assert.assertEquals(actualHeader, "Login");
+	}
 }
