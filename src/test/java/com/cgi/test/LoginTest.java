@@ -10,19 +10,19 @@ import com.cgi.utilities.DataSource;
 
 public class LoginTest extends AutomationWrapper {
 
-	@Test
-	public void validLoginTest() {
+	@Test(dataProviderClass = DataSource.class, dataProvider = "commonDataProvider")
+	public void validLoginTest(String username,String password,String expectedValue) {
 		LoginPage login = new LoginPage(driver);
-		login.enterUsername("Admin");
-		login.enterPassword("admin123");
+		login.enterUsername(username);
+		login.enterPassword(password);
 		login.clickOnLogin();
 
 		DashboardPage dashboard = new DashboardPage(driver);
 		String actualValue = dashboard.getTimeAtWorkText();
-		Assert.assertEquals(actualValue, "Time at Work");
+		Assert.assertEquals(actualValue, expectedValue);
 	}
 
-	@Test(dataProviderClass = DataSource.class, dataProvider = "invalidLoginData")
+	@Test(dataProviderClass = DataSource.class, dataProvider = "commonDataProvider")
 	public void invalidLoginTest(String username, String password, String expectedError) {
 		LoginPage login = new LoginPage(driver);
 		login.enterUsername(username);

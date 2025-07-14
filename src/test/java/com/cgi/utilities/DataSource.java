@@ -1,5 +1,8 @@
 package com.cgi.utilities;
 
+import java.io.IOException;
+import java.lang.reflect.Method;
+
 import org.testng.annotations.DataProvider;
 
 public class DataSource {
@@ -23,4 +26,13 @@ public class DataSource {
 //		Object[][] data = { { "peter", "peter123" }, { "john", "john123" }, { "9", "kim123" } };
 //		return data;
 //	}
+	
+	@DataProvider
+	public Object[][] commonDataProvider(Method method) throws IOException
+	{
+		//Current @Test method name is the sheet name
+		String testMethodName=method.getName();
+		Object[][] data= ExcelSource.getSheetIntoTwoDimensionalArray("test-data/OrangeData.xlsx", testMethodName);
+		return data;
+	}
 }
