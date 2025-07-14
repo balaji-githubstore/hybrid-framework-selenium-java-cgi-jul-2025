@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-14T05:18:46 UTC" name="Surefire suite" finished-at="2025-07-14T05:19:34 UTC" duration-ms="47485">
+    <groups>
+    </groups>
+    <test started-at="2025-07-14T05:18:46 UTC" name="Surefire test" finished-at="2025-07-14T05:19:34 UTC" duration-ms="47485">
+      <class name="com.cgi.test.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:18:46 UTC" name="setup" finished-at="2025-07-14T05:19:01 UTC" duration-ms="15299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:01 UTC" name="invalidLoginTest" data-provider="invalidLoginData" finished-at="2025-07-14T05:19:05 UTC" duration-ms="3699" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saul]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[saul123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credential]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:05 UTC" name="teardown" finished-at="2025-07-14T05:19:06 UTC" duration-ms="397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:06 UTC" name="setup" finished-at="2025-07-14T05:19:11 UTC" duration-ms="5067" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="invalidLoginTest(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:11 UTC" name="invalidLoginTest" data-provider="invalidLoginData" finished-at="2025-07-14T05:19:13 UTC" duration-ms="2405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[peter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[peter]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credential]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:13 UTC" name="teardown" finished-at="2025-07-14T05:19:13 UTC" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:13 UTC" name="setup" finished-at="2025-07-14T05:19:18 UTC" duration-ms="5031" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validLoginTest()[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:18 UTC" name="validLoginTest" finished-at="2025-07-14T05:19:21 UTC" duration-ms="2971" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginTest@5c909414]" started-at="2025-07-14T05:19:21 UTC" name="teardown" finished-at="2025-07-14T05:19:22 UTC" duration-ms="344" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.cgi.test.LoginTest -->
+      <class name="com.cgi.test.LoginUITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginUITest@19bb07ed]" started-at="2025-07-14T05:19:22 UTC" name="setup" finished-at="2025-07-14T05:19:27 UTC" duration-ms="5203" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="headerTest()[pri:0, instance:com.cgi.test.LoginUITest@19bb07ed]" started-at="2025-07-14T05:19:27 UTC" name="headerTest" finished-at="2025-07-14T05:19:28 UTC" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginUITest@19bb07ed]" started-at="2025-07-14T05:19:28 UTC" name="teardown" finished-at="2025-07-14T05:19:28 UTC" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginUITest@19bb07ed]" started-at="2025-07-14T05:19:28 UTC" name="setup" finished-at="2025-07-14T05:19:33 UTC" duration-ms="5323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:com.cgi.test.LoginUITest@19bb07ed]" started-at="2025-07-14T05:19:33 UTC" name="titleTest" finished-at="2025-07-14T05:19:33 UTC" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginUITest@19bb07ed]" started-at="2025-07-14T05:19:33 UTC" name="teardown" finished-at="2025-07-14T05:19:34 UTC" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.cgi.test.LoginUITest -->
+      <class name="com.cgi.test.ZDemo1Test">
+        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.cgi.test.ZDemo1Test@10e41621]" started-at="2025-07-14T05:19:34 UTC" name="validTest" data-provider="validData" finished-at="2025-07-14T05:19:34 UTC" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[peter]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[peter123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.cgi.test.ZDemo1Test@10e41621]" started-at="2025-07-14T05:19:34 UTC" name="validTest" data-provider="validData" finished-at="2025-07-14T05:19:34 UTC" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[john]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[john123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+        <test-method signature="validTest(java.lang.String,java.lang.String)[pri:0, instance:com.cgi.test.ZDemo1Test@10e41621]" started-at="2025-07-14T05:19:34 UTC" name="validTest" data-provider="validData" finished-at="2025-07-14T05:19:34 UTC" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kinh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[kim123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validTest -->
+      </class> <!-- com.cgi.test.ZDemo1Test -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
