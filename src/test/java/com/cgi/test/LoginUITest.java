@@ -8,13 +8,13 @@ import com.cgi.base.AutomationWrapper;
 
 public class LoginUITest extends AutomationWrapper {
 
-	@Test(groups = {"smoke","UI"})
+	@Test(groups = {"smoke","regression"})
 	public void titleTest() {
 		String actualTitle = driver.getTitle();
 		Assert.assertEquals(actualTitle, "OrangeHRM123");
 	}
 
-	@Test(groups = {"regression","UI"})
+	@Test(groups = {"regression","sanity"})
 	public void headerTest() {
 		// Assert the header - Login
 		String actualHeader = driver.findElement(By.xpath("//h5")).getText();
