@@ -9,6 +9,8 @@ public class ZDemoExtentReport {
 
 	public static void main(String[] args) {
 	
+		
+		//BeforeSuite
 		//only once in the beginning - configuration details
 		ExtentReports extent = new ExtentReports();
 		ExtentSparkReporter spark = new ExtentSparkReporter("target/Spark.html");
@@ -18,14 +20,15 @@ public class ZDemoExtentReport {
 		//run before each @Test or Scenario to create a test method in report 
 		ExtentTest test= extent.createTest("MyFirstTest-CGI");
 		
+		test.log(Status.INFO, "Entered username");
 		
 		//run after each @Test or Scenario to log the status of created test method 
 		test.log(Status.FAIL, "This is a logging event for MyFirstTest, and it passed!");
 		
 		
 		
-		
-		//runs at the end to generate the report
+		//AfterSuite
+		//runs at the end to generate the report - 
 		extent.flush();
 
 	}
