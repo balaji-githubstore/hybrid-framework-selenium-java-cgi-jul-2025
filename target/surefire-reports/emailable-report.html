@@ -8,40 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">8</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">42,182</td><td></td><td></td></tr>
+<tr><th colspan="8">Orange Suite</th></tr>
+<tr><td><a href="#t0">Edge Login Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,088</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.cgi.test.LoginUITest</td><td><a href="#m0">titleTest</a></td><td rowspan="1">1752820230431</td><td rowspan="1">32</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.cgi.test.EmployeeTest</td><td><a href="#m1">addValidEmployeeTest</a></td><td rowspan="1">1752820196737</td><td rowspan="1">13</td></tr><tr class="passedodd"><td rowspan="3">com.cgi.test.LoginTest</td><td><a href="#m2">invalidLoginTest</a></td><td rowspan="2">1752820209819</td><td rowspan="2">2352</td></tr><tr class="passedodd"><td><a href="#m3">invalidLoginTest</a></td></tr><tr class="passedodd"><td><a href="#m4">validLoginTest</a></td><td rowspan="1">1752820217651</td><td rowspan="1">2895</td></tr><tr class="passedeven"><td rowspan="1">com.cgi.test.LoginUITest</td><td><a href="#m5">headerTest</a></td><td rowspan="1">1752820226768</td><td rowspan="1">530</td></tr><tr class="passedodd"><td rowspan="3">com.cgi.test.ZDemo1Test</td><td><a href="#m6">validTest</a></td><td rowspan="3">1752820230718</td><td rowspan="3">4</td></tr><tr class="passedodd"><td><a href="#m7">validTest</a></td></tr><tr class="passedodd"><td><a href="#m8">validTest</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Orange Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Edge Login Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.cgi.test.LoginUITest</td><td><a href="#m0">headerTest</a></td><td rowspan="1">1752822963419</td><td rowspan="1">457</td></tr><tr class="passedeven"><td><a href="#m1">titleTest</a></td><td rowspan="1">1752822968800</td><td rowspan="1">16</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">com.cgi.test.LoginUITest#titleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=138.0.7204.158)
-Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
-System info: os.name: &apos;Windows Server 2019&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7ff6e233f7892eae82c18e66758c2189, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54861}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54861/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7ff6e233f7892eae82c18e66758c2189
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:617)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:621)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:317)
-	at com.cgi.test.LoginUITest.titleTest(LoginUITest.java:13)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.cgi.test.EmployeeTest#addValidEmployeeTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th><th>Parameter #6</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td><td>John</td><td>c</td><td>wick</td><td>john wick</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.cgi.test.LoginTest#invalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>bala</td><td>bala123</td><td>Invalid credential</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.cgi.test.LoginTest#invalidLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>bhanu</td><td>454545</td><td>Invalid credential</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.cgi.test.LoginTest#validLoginTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Admin</td><td>admin123</td><td>Time at Work</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.cgi.test.LoginUITest#headerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.cgi.test.ZDemo1Test#validTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>peter</td><td>peter123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.cgi.test.ZDemo1Test#validTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>kinh</td><td>kim123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.cgi.test.ZDemo1Test#validTest</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>john</td><td>john123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Edge Login Test</h2><h3 id="m0">com.cgi.test.LoginUITest#headerTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.cgi.test.LoginUITest#titleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

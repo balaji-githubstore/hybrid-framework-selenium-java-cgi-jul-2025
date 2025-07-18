@@ -28,7 +28,7 @@ public class AutomationWrapper {
 	private static ExtentReports extent;
 	protected ExtentTest test;
 
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
 	public void init() {
 		if (extent == null) {
 			extent = new ExtentReports();
@@ -37,7 +37,7 @@ public class AutomationWrapper {
 		}
 	}
 
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
 	public void end() {
 		extent.flush();
 	}

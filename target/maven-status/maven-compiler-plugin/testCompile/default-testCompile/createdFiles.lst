@@ -1,0 +1,13 @@
+com\cgi\base\AutomationWrapper.class
+com\cgi\test\LoginUITest.class
+com\cgi\test\ZDemoExtentReport.class
+com\cgi\base\WebDriverKeywords.class
+com\cgi\pages\LoginPage.class
+com\cgi\test\ZDemo2Excel.class
+com\cgi\utilities\ExcelSource.class
+com\cgi\test\LoginTest.class
+com\cgi\test\EmployeeTest.class
+com\cgi\pages\DashboardPage.class
+com\cgi\pages\MainPage.class
+com\cgi\test\ZDemo1Test.class
+com\cgi\utilities\DataSource.class

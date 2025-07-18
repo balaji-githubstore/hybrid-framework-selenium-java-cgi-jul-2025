@@ -1,30 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-14T07:51:43 UTC" name="Failed suite [Orange Suite]" finished-at="2025-07-14T07:51:50 UTC" duration-ms="7140">
+  <suite started-at="2025-07-18T12:37:40 IST" name="Orange Suite" finished-at="2025-07-18T12:40:48 IST" duration-ms="188166">
     <groups>
-      <group name="UI">
-        <method signature="LoginUITest.titleTest()[pri:0, instance:com.cgi.test.LoginUITest@30c15d8b]" name="titleTest" class="com.cgi.test.LoginUITest"/>
-      </group> <!-- UI -->
+      <group name="regression">
+        <method signature="LoginUITest.headerTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" name="headerTest" class="com.cgi.test.LoginUITest"/>
+        <method signature="LoginUITest.titleTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" name="titleTest" class="com.cgi.test.LoginUITest"/>
+      </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginUITest.titleTest()[pri:0, instance:com.cgi.test.LoginUITest@30c15d8b]" name="titleTest" class="com.cgi.test.LoginUITest"/>
+        <method signature="LoginUITest.titleTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" name="titleTest" class="com.cgi.test.LoginUITest"/>
       </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="LoginUITest.headerTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" name="headerTest" class="com.cgi.test.LoginUITest"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-07-14T07:51:43 UTC" name="Edge Login Test(failed)" finished-at="2025-07-14T07:51:50 UTC" duration-ms="7140">
+    <test started-at="2025-07-18T12:37:40 IST" name="Edge Login Test" finished-at="2025-07-18T12:40:48 IST" duration-ms="188166">
       <class name="com.cgi.test.LoginUITest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.cgi.test.LoginUITest@30c15d8b]" started-at="2025-07-14T07:51:43 UTC" name="setup" finished-at="2025-07-14T07:51:50 UTC" duration-ms="6615" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:37:40 IST" name="init" finished-at="2025-07-18T12:37:40 IST" duration-ms="331" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:37:40 IST" name="setup" finished-at="2025-07-18T12:37:48 IST" duration-ms="7673" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[edge]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.cgi.test.LoginUITest.headerTest()]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="titleTest()[pri:0, instance:com.cgi.test.LoginUITest@30c15d8b]" started-at="2025-07-14T07:51:50 UTC" name="titleTest" finished-at="2025-07-14T07:51:50 UTC" duration-ms="52" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.reflect.Method)[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:37:40 IST" name="setup" finished-at="2025-07-18T12:37:47 IST" duration-ms="6347" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.cgi.test.LoginUITest.titleTest()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:37:47 IST" name="titleTest" finished-at="2025-07-18T12:37:48 IST" duration-ms="1359" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [OrangeHRM123] but found [OrangeHRM]]]>
@@ -38,8 +67,10 @@ at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
 at com.cgi.test.LoginUITest.titleTest(LoginUITest.java:14)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -48,33 +79,102 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- titleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginUITest@30c15d8b]" started-at="2025-07-14T07:51:50 UTC" name="teardown" finished-at="2025-07-14T07:51:50 UTC" duration-ms="352" status="PASS">
+        <test-method signature="headerTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:37:48 IST" name="headerTest" finished-at="2025-07-18T12:40:48 IST" duration-ms="180434" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[java.util.concurrent.TimeoutException
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d4beb9ba0abd3735d3cbe07126df84b2, getElementText {id=f.FB563A53A88E22D47F4BB91D4C594483.d.7BB5F0165518289E7F3C25B071F79701.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.83, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59604}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HI\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59604/devtoo..., se:cdpVersion: 138.0.3351.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d4beb9ba0abd3735d3cbe07126df84b2)] -> xpath: //h5]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d4beb9ba0abd3735d3cbe07126df84b2, getElementText {id=f.FB563A53A88E22D47F4BB91D4C594483.d.7BB5F0165518289E7F3C25B071F79701.e.22}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 138.0.3351.83, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59604}, msedge: {msedgedriverVersion: 138.0.3351.83 (16e2a7bef320..., userDataDir: C:\Users\HI\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59604/devtoo..., se:cdpVersion: 138.0.3351.83, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (d4beb9ba0abd3735d3cbe07126df84b2)] -> xpath: //h5]
+at org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:427)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:212)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:191)
+at com.cgi.test.LoginUITest.headerTest(LoginUITest.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.util.concurrent.TimeoutException
+at java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2874)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+... 3 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerTest -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:37:48 IST" name="teardown" finished-at="2025-07-18T12:37:49 IST" duration-ms="683" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=titleTest status=FAILURE method=LoginUITest.titleTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="teardown(org.testng.ITestResult)[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:40:48 IST" name="teardown" finished-at="2025-07-18T12:40:48 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=headerTest status=FAILURE method=LoginUITest.headerTest()[pri:0, instance:com.cgi.test.LoginUITest@44c03695] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="end()[pri:0, instance:com.cgi.test.LoginUITest@44c03695]" started-at="2025-07-18T12:40:48 IST" name="end" finished-at="2025-07-18T12:40:49 IST" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
       </class> <!-- com.cgi.test.LoginUITest -->
-    </test> <!-- Edge Login Test(failed) -->
-  </suite> <!-- Failed suite [Orange Suite] -->
+    </test> <!-- Edge Login Test -->
+  </suite> <!-- Orange Suite -->
 </testng-results>

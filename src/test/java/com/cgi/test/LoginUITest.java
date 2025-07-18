@@ -11,7 +11,7 @@ public class LoginUITest extends AutomationWrapper {
 	@Test(groups = {"smoke","regression"})
 	public void titleTest() {
 		String actualTitle = driver.getTitle();
-		Assert.assertEquals(actualTitle, "OrangeHRM123");
+		Assert.assertEquals(actualTitle, "OrangeHRM");
 	}
 
 	@Test(groups = {"regression","sanity"})
